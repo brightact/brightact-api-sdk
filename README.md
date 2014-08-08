@@ -18,11 +18,34 @@ Errors
 ================
 
 All error responses can have different responses.
+
 First type with single error:
 ```
 {
     "error":"The server encountered an error processing your request."
 }
+```
+
+Second type with multi errors:
+```
+{
+    "errors":
+        {
+            "username":["Username cannot be blank."],
+            "password":["Password cannot be blank."],
+            "first_name":["First Name cannot be blank."],
+            "last_name":["Last Name cannot be blank."]
+        }
+}
+```
+
+Authentication
+================
+For auth we use API key, what you can find at your account. And we have two main roles at API: **admininistrator** and **user**. Roles based on your key access level. All methods at this moment requires authentication.
+
+Example of request with API key:
+```
+/api/v1/contentBoardData/1?key={api_key}
 ```
 
 
