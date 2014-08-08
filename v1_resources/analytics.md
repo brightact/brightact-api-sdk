@@ -73,4 +73,34 @@ Approve Dashboard report
     </tbody>
 </table>
 
+## `POST /api/v1/approveLeaderBoardReport`
+
+Approve LeaderBoard report
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>user_id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>UserID</td>
+        </tr>
+        <tr>
+            <td><code>cc</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>CC emails for report</td>
+        </tr>
+    </tbody>
+</table>
 
