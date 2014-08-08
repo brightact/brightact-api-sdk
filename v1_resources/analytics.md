@@ -436,3 +436,156 @@ Get pack lead engagement
     </tbody>
 </table>
 
+
+## `GET /api/v1/getLeadScoreCard/:lead_token`
+
+Get Lead score card
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>lead_token</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Lead session token</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## `GET /api/v1/getPackContentReport/:pack_key`
+
+Get pack content report data
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>pack_key</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Pack key</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## `GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range`
+
+Get lead overall engagement
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>user_id</code></td>
+            <td>required</td>
+            <td>integer|string</td>
+            <td>UserID | my(for current account)</td>
+        </tr>
+        <tr>
+            <td><code>email</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Lead email</td>
+        </tr>
+        <tr>
+            <td><code>range</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Date period. Default: 1</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## `GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token`
+
+Get lead asset engagement
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>content_id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>ContentID</td>
+        </tr>
+        <tr>
+            <td><code>lead_token</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Lead session token</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## `GET /api/v1/getAssetInfo/:content_id?range=:range`
+
+Get asset info
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>content_id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>ContentID</td>
+        </tr>
+        <tr>
+            <td><code>range</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Date period. Default: 1</td>
+        </tr>
+    </tbody>
+</table>
