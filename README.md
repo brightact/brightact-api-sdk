@@ -14,6 +14,17 @@ Formats
 =================
 We present two formats for response: **json** and **xml**. By default API use **json** format. 
 
+Errors
+================
+
+All error responses can have different responses.
+First type with single error:
+```
+{
+    "error":"The server encountered an error processing your request."
+}
+```
+
 
 
 
