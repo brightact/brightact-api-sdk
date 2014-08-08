@@ -48,6 +48,17 @@ Example of request with API key:
 /api/v1/contentBoardData/1?key={api_key}
 ```
 
+Methods
+================
 
+### [Analytics](/v1_resources/analytics.md)
+
+| Endpoint | Description |
+| ---- | --------------- |
+| [POST /api/v1/approveDashboardReport](/v1_resources/analytics.md) | Approve Dashboard report |
+| [POST /api/v1/approveLeaderBoardReport](/v1_resources/analytics.md) | Approve LeaderBoard report |
+| [GET /api/v1/contentBoardData?range=:range](/v1_resources/analytics.md) | Get ContentBoard data |
+| [GET /api/v1/leaderBoardData?range=:range&only_unique=:only_unique](/v1_resources/analytics.md) |  Get LeaderBoard data |
+| [GET /api/v1/getScoreOfTilePerViewer?box_id=:tileID&token=:token](/v1_resources/analytics.md) |  Get score of time per lead session |
 
 
