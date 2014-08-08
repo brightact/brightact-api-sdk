@@ -22,3 +22,55 @@ Get analytics data.
 | [GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range](/v1_resources/analytics.md) | Get lead overall engagement |
 | [GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token](/v1_resources/analytics.md) | Get lead asset engagement |
 | [GET /api/v1/getAssetInfo/:content_id?range=:range](/v1_resources/analytics.md) | Get asset info |
+
+
+## `POST /api/v1/approveDashboardReport`
+
+Approve Dashboard report
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>pack_key</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Pack key</td>
+        </tr>
+        <tr>
+            <td><code>cc</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>CC emails for report</td>
+        </tr>
+        <tr>
+            <td><code>lead_table</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Send or did not send lead table report. Default: 1</td>
+        </tr>
+        <tr>
+            <td><code>score_cards</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Send or did not send score cards report. Default: 0</td>
+        </tr>
+        <tr>
+            <td><code>score_offset</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Ccore offset. Default: 0. Range of value: 0-100</td>
+        </tr>
+    </tbody>
+</table>
+
+
