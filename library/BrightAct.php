@@ -266,6 +266,127 @@ class BrightAct {
         return $this->_proceed_method('getTopXInternalLeads', $user_id, $data);
     }
 
+    /**
+     * Get pack lead engagement
+     * @param $pack_key
+     * @param int $range
+     * @param int $only_unique
+     * @param int $show_anonymous
+     * @return mixed
+     *
+     * Params values:
+     * pack_key - pack key (required)
+     * range - time period (1-5)
+     * only_unique - 0|1
+     * show_anonymous - 0|1
+     *
+     * Time periods:
+     * 1 - All time
+     * 2 - Last 90 days
+     * 3 - Last 30 days
+     * 4 - Recent week
+     * 5 - Today
+     */
+
+    public function getPackLeadEngagement($pack_key, $range = 1, $only_unique = 0, $show_anonymous = 0)
+    {
+        $data = array(
+            'range' => $range,
+            'only_unique' => $only_unique,
+            'show_anonymous' => $show_anonymous,
+        );
+        return $this->_proceed_method('getPackLeadEngagement', $pack_key, $data);
+    }
+
+    /**
+     * Get Lead score card
+     * @param $lead_token
+     * @return mixed
+     *
+     * Params values:
+     * lead_token - Lead token (required)
+     */
+
+    public function getLeadScoreCard($lead_token)
+    {
+        $data = array();
+        return $this->_proceed_method('getLeadScoreCard', $lead_token, $data);
+    }
+
+    /**
+     * Get pack content report data
+     * @param $pack_key
+     * @return mixed
+     *
+     * * Params values:
+     * pack_key - pack key (required)
+     */
+
+    public function getPackContentReport($pack_key)
+    {
+        $data = array();
+        return $this->_proceed_method('getPackContentReport', $pack_key, $data);
+    }
+
+    /**
+     * Get lead overall engagement
+     * @param $email
+     * @param int $range
+     * @param int $user_id
+     * @return mixed
+     *
+     * Params values:
+     * range - time period (1-5)
+     * email - lead email
+     */
+
+    public function getLeadOverallEngagement($email, $range = 1, $user_id = 0)
+    {
+        $data = array(
+            'email' => $email,
+            'range' => $range,
+        );
+        return $this->_proceed_method('getLeadOverallEngagement', $user_id, $data);
+    }
+
+    /**
+     * Get lead asset engagement
+     * @param $content_id
+     * @param $token
+     * @return mixed
+     *
+     * Params values:
+     * content_id - Content ID
+     * token - Lead session unique token
+     */
+
+    public function getLeadAssetEngagement($content_id, $token)
+    {
+        $data = array(
+            'token' => $token
+        );
+        return $this->_proceed_method('getLeadAssetEngagement', $content_id, $data);
+    }
+
+    /**
+     * Get asset info
+     * @param $content_id
+     * @param $range
+     * @return mixed
+     *
+     * Params values:
+     * content_id - Content ID
+     * range - date period (1-5)
+     */
+
+    public function getAssetInfo($content_id, $range)
+    {
+        $data = array(
+            'range' => $range
+        );
+        return $this->_proceed_method('getAssetInfo', $content_id, $data);
+    }
+
     /* Private functions */
 
     /**
