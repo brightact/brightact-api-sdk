@@ -73,6 +73,7 @@ Approve Dashboard report
     </tbody>
 </table>
 
+
 ## `POST /api/v1/approveLeaderBoardReport`
 
 Approve LeaderBoard report
@@ -104,3 +105,34 @@ Approve LeaderBoard report
     </tbody>
 </table>
 
+
+## `GET /api/v1/contentBoardData/:user_id?range=:range`
+
+Get ContentBoard data
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>user_id</code></td>
+            <td>required</td>
+            <td>integer|sctring</td>
+            <td>UserID|my(for current account)</td>
+        </tr>
+        <tr>
+            <td><code>range</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>Date period. Default: 1</td>
+        </tr>
+    </tbody>
+</table>
