@@ -181,7 +181,6 @@ Get ContentBoard data
 ```
 
 
-
 ## `GET /api/v1/leaderBoardData/:user_id?range=:range&only_unique=:only_unique`
 
 Get LeaderBoard data
@@ -219,6 +218,21 @@ Get LeaderBoard data
     </tbody>
 </table>
 
+```json
+[
+    {
+        "token":"51e406ea62d0f1373898474",
+        "email":"onehels@gmail.com",
+        "score":"100",
+        "date":"2013-07-15 17:29:15",
+        "overall_num":76,
+        "lead_name":"---",
+        "pack_name":"5 tiles portrait mode"
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getScoreOfTilePerViewer/:tile_id?token=:token`
 
@@ -250,6 +264,14 @@ Get score of time per lead session
         </tr>
     </tbody>
 </table>
+
+### Example Response
+
+```json
+{
+    "score":"100"
+}
+```
 
 
 ## `GET /api/v1/getTopXPackViews/:user_id?range=:range&limit=:limit`
@@ -288,6 +310,19 @@ Get Top pack views
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "pack_id":"1096",
+        "pack_name":"With splash screen (update)",
+        "num":129
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getTopXPackShared/:user_id?range=:range&limit=:limit`
 
@@ -324,6 +359,19 @@ Get Top pack shared
         </tr>
     </tbody>
 </table>
+
+### Example Response
+
+```json
+[
+    {
+        "pack_id":"1096",
+        "pack_name":"With splash screen (update)",
+        "num":16
+    },
+    ...
+]
+```
 
 
 ## `GET /api/v1/getTopXLeadAccounts/:user_id?range=:range&limit=:limit`
@@ -362,6 +410,23 @@ Get Top pack leads
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "name":"test",
+        "num":7,
+        "dates":
+            [
+                "2014-04-01",
+                ...
+            ]
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getTopXExternalLeads/:user_id?range=:range&limit=:limit`
 
@@ -399,6 +464,19 @@ Get Top external leads
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "email":"test",
+        "score":"100",
+        "date":"2014-01-24"
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getTopXInternalLeads/:user_id?range=:range&limit=:limit`
 
@@ -435,6 +513,18 @@ Get Top internal leads
         </tr>
     </tbody>
 </table>
+
+### Example Response
+
+```json
+[
+    {
+        "email":"onehels@gmail.com",
+        "score":"100"
+    },
+    ...
+]
+```
 
 
 ## `GET /api/v1/getPackLeadEngagement/:pack_key?range=:range&only_unique=:only_unique&show_anonymous=:show_anonymous`
@@ -480,6 +570,26 @@ Get pack lead engagement
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "name":"---",
+        "email":"onehels@gmail2.com",
+        "shared":0,
+        "score":"12",
+        "message_id":0,
+        "referral_id":0,
+        "referral_all":0,
+        "token":"53064ea8bfa411392922280",
+        "date":"2014-02-20 20:51:20",
+        "opt_in":null
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getLeadScoreCard/:lead_token`
 
@@ -506,6 +616,58 @@ Get Lead score card
     </tbody>
 </table>
 
+### Example Response
+
+```json
+{
+    "main_data":
+        {
+            "lead_name":"---",
+            "email":"onehels@gmail.com",
+            "score":"0",
+            "referral":"me",
+            "pack_name":"Firts SalesPack Admin",
+            "share":0,
+            "messages":
+                [
+                    ...
+                ],
+            "date":"13 Jun 2013 16:19:39 (PST)",
+            "city":"",
+            "country":"",
+            "region":"",
+            "device_type":"Mac",
+            "browser":"Firefox",
+            "opt_in":"No",
+            "user_id":"5",
+            "is_anonymous":"0"
+        },
+    "q_list":
+        [
+            ...
+        ],
+    "opt_in_q":
+        [
+            {
+                "question":"Opt-In to Informatica Communications - would you like to receive communications from Informatica about products, solutions and events?",
+                "answer":"No"
+            }
+        ],
+    "engagement_content":
+        [
+            {
+                "c_id":6,
+                "name":"Welcome Note",
+                "tile_name":"Welcome Note",
+                "pages":"--",
+                "time":45,
+                "actions":"",
+            },
+            ...
+        ]
+}
+```
+
 
 ## `GET /api/v1/getPackContentReport/:pack_key`
 
@@ -531,6 +693,48 @@ Get pack content report data
         </tr>
     </tbody>
 </table>
+
+
+### Example Response
+
+```json
+{
+    "best_assets":
+        [
+            {
+                "name":"Video - The Pulpit Rock - Norway",
+                "score":18
+            },
+            ...
+        ],
+    "hotspots":
+        [
+            {
+                "id": "Readme.pdf",
+                "name": "309",
+                "page": "1",
+                "views": "1",
+                "views_p": "0",
+                "max_time": "0",
+                "avg_time": "0",
+                "avg_time_score": "0",
+                "views_p_score": "0",
+                "h_score": "0",
+            },
+            ...
+        ],
+    "time_periods":
+        [
+            {
+                "start_time_view":"00:00",
+                "end_time_view":"01:00",
+                "views":0,
+                "views_pc":0,
+                "views_mobile":0
+            },
+            ...
+        ]
+```
 
 
 ## `GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range`
@@ -570,6 +774,21 @@ Get lead overall engagement
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "pack_key":"1373646662448292",
+        "pack_name":"5 tiles portrait mode",
+        "token":"51e406dc4a1ff1373898460",
+        "score":"0",
+        "date":"2013-07-15 17:27:43"
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token`
 
@@ -602,6 +821,25 @@ Get lead asset engagement
     </tbody>
 </table>
 
+### Example Response
+
+```json
+[
+    {
+        "img_url":null,
+        "page":1,
+        "views":1,
+        "print":0,
+        "download":0,
+        "avg_time":25,
+        "max_time":25,
+        "level":1,
+        "actions":""
+    },
+    ...
+]
+```
+
 
 ## `GET /api/v1/getAssetInfo/:content_id?range=:range`
 
@@ -633,3 +871,13 @@ Get asset info
         </tr>
     </tbody>
 </table>
+
+### Example Response
+
+```json
+{
+    "views":51,
+    "printed":0,
+    "downloaded":0,
+}
+```

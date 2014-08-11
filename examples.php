@@ -60,7 +60,7 @@ echo '</pre>';*/
 /* Same for: getTopXPackShared, getTopXLeadAccounts, getTopXExternalLeads, getTopXInternalLeads */
 
 /*$range = 1; //Date period
-$limit = 10; //Rows num
+$limit = 1; //Rows num
 $out = $inst->getTopXPackViews($range, $limit);
 echo '<pre>';
 print_r($out);
