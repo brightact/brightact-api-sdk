@@ -73,6 +73,14 @@ Approve Dashboard report
     </tbody>
 </table>
 
+### Example Response
+
+```json
+{
+    "id":"56"
+}
+```
+
 
 ## `POST /api/v1/approveLeaderBoardReport`
 
@@ -105,6 +113,14 @@ Approve LeaderBoard report
     </tbody>
 </table>
 
+### Example Response
+
+```json
+{
+    "id":"57"
+}
+```
+
 
 ## `GET /api/v1/contentBoardData/:user_id?range=:range`
 
@@ -136,6 +152,34 @@ Get ContentBoard data
         </tr>
     </tbody>
 </table>
+
+### Example Response
+
+```json
+[
+    {
+        "id":293,
+        "type":"1",
+        "name":"admin-new-user.pptx",
+        "avg_score":37,
+        "score":"100",
+        "views":52,
+        "used_in_packs":
+            [
+                "1373646662448292",
+                "1373646662448304",
+                "1373646662444589",
+                ...
+            ],
+        "rating":0,
+        "weight":"100",
+        "rate_users":0,
+        "created_at":"2013-07-12 19:31:46"
+    },
+    ...
+]
+```
+
 
 
 ## `GET /api/v1/leaderBoardData/:user_id?range=:range&only_unique=:only_unique`
