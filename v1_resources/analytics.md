@@ -161,7 +161,7 @@ Get ContentBoard data
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><a href="/v1_resources/analytics.md#date-ranges">range</a></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
