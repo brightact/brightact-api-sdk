@@ -12,6 +12,8 @@ For now we have only one version of API (**v1**).
 
 Formats
 =================
+The base URL for all API resources is http://app.brightact.com/api/v1.
+
 We present two formats for response: **json** and **xml**. By default API use **json** format. 
 
 Errors

@@ -24,6 +24,22 @@ Get analytics data.
 | [GET /api/v1/getAssetInfo/:content_id?range=:range](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get asset info |
 
 
+Date ranges
+=================
+All reports methods used one format of date ranges. We did not allow custom date periods at this moment.
+
+| RangeID | Description |
+| ---- | --------------- |
+| 1 | All time |
+| 2 | Last 90 days |
+| 3 | Last 30 days |
+| 4 | Recent week |
+| 5 | Today |
+
+
+Methods details
+=================
+
 ## `POST /api/v1/approveDashboardReport`
 
 Approve Dashboard report
