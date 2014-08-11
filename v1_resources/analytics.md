@@ -24,7 +24,7 @@ Get analytics data.
 | [GET /api/v1/getAssetInfo/:content_id?range=:range](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get asset info |
 
 
-# `Date ranges`
+## Date ranges
 
 All reports methods used one format of date ranges. We did not allow custom date periods at this moment.
 
@@ -37,7 +37,7 @@ All reports methods used one format of date ranges. We did not allow custom date
 | 5 | Today |
 
 
-# Methods details
+## Methods details
 
 
 ## `POST /api/v1/approveDashboardReport`
