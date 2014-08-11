@@ -17,7 +17,7 @@ Get analytics data.
 | [GET /api/v1/getTopXExternalLeads/:user_id?range=:range&limit=:limit](/v1_resources/analytics.md#get-apiv1gettopxexternalleadsuser_idrangerangelimitlimit) | Get Top external leads |
 | [GET /api/v1/getTopXInternalLeads/:user_id?range=:range&limit=:limit](/v1_resources/analytics.md#get-apiv1gettopxinternalleadsuser_idrangerangelimitlimit) | Get Top internal leads |
 | [GET /api/v1/getPackLeadEngagement/:pack_key?range=:range&only_unique=:only_unique&show_anonymous=:show_anonymous](/v1_resources/analytics.md#get-apiv1getpackleadengagementpack_keyrangerangeonly_uniqueonly_uniqueshowanonymousshow_anonymous) | Get pack lead engagement |
-| [GET /api/v1/getLeadScoreCard/:lead_token](/v1_resources/analytics.md#get-apiv1getleadscorecardslead_token) | Get Lead score card |
+| [GET /api/v1/getLeadScoreCard/:lead_token](/v1_resources/analytics.md#get-apiv1getleadscorecardlead_token) | Get Lead score card |
 | [GET /api/v1/getPackContentReport/:pack_key](/v1_resources/analytics.md#get-apiv1getpackcontentreportpack_key) | Get pack content report data |
 | [GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range](/v1_resources/analytics.md#get-apiv1getleadoverallengagementuser_idemailemailrangerange) | Get lead overall engagement |
 | [GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token](/v1_resources/analytics.md#get-apiv1getleadassetengagementcontent_idlead_tokenlead_token) | Get lead asset engagement |
