@@ -220,7 +220,7 @@ Get LeaderBoard data
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -313,7 +313,7 @@ Get Top pack views
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -363,7 +363,7 @@ Get Top pack shared
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -413,7 +413,7 @@ Get Top pack leads
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -467,7 +467,7 @@ Get Top external leads
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -517,7 +517,7 @@ Get Top internal leads
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -566,7 +566,7 @@ Get pack lead engagement
             <td>Pack key</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -782,7 +782,7 @@ Get lead overall engagement
             <td>Lead email</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
@@ -880,7 +880,7 @@ Get asset info
             <td>ContentID</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
