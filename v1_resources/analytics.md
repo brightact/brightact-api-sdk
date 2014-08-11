@@ -6,9 +6,9 @@ Get analytics data.
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /api/v1/approveDashboardReport](/v1_resources/analytics.md) | Approve Dashboard report |
-| [POST /api/v1/approveLeaderBoardReport](/v1_resources/analytics.md) | Approve LeaderBoard report |
-| [GET /api/v1/contentBoardData/:user_id?range=:range](/v1_resources/analytics.md) | Get ContentBoard data |
+| [POST /api/v1/approveDashboardReport](/v1_resources/analytics.md#post-apiv1approvedashboardreport) | Approve Dashboard report |
+| [POST /api/v1/approveLeaderBoardReport](/v1_resources/analytics.md#post-apiv1approveleaderboardreport) | Approve LeaderBoard report |
+| [GET /api/v1/contentBoardData/:user_id?range=:range](/v1_resources/analytics.md#get-apiv1contentboarddata) | Get ContentBoard data |
 | [GET /api/v1/leaderBoardData/:user_id?range=:range&only_unique=:only_unique](/v1_resources/analytics.md) |  Get LeaderBoard data |
 | [GET /api/v1/getScoreOfTilePerViewer/:tile_id?token=:token](/v1_resources/analytics.md) |  Get score of time per lead session |
 | [GET /api/v1/getTopXPackViews/:user_id?range=:range&limit=:limit](/v1_resources/analytics.md) | Get Top pack views |
