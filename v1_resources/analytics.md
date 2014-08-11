@@ -84,7 +84,7 @@ Approve Dashboard report
             <td><code>score_offset</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Ccore offset. Default: 0. Range of value: 0-100</td>
+            <td>Score offset. Default: 0. Range of value: 0-100</td>
         </tr>
     </tbody>
 </table>
@@ -161,7 +161,7 @@ Get ContentBoard data
             <td>UserID | my(for current account)</td>
         </tr>
         <tr>
-            <td><code>range</code></td>
+            <td><code>[range](/v1_resources/analytics.md#dateperiods)</code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Date period. Default: 1</td>
