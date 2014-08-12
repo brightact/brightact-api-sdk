@@ -13,7 +13,7 @@ class BrightAct {
      * You need set your own API key, you can find it at your account
      */
 
-    public $API_KEY = '38153d92f4a81fe225053d92f4a81fef';
+    public $API_KEY = '32053e9db9176aa726253e9db9176b54';
 
     /* Analytics methods */
 
