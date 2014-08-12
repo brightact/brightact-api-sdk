@@ -9,8 +9,8 @@ $inst = new BrightAct();
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'pack_key' => '1400180273521657', //Pack key (required)
-    'cc' => 'onehels@mail.ru', //CC emails (optional)
+    'pack_key' => '1369900160341905', //Pack key (required)
+    'cc' => 'email@domain.com', //CC emails (optional)
     'lead_table' => 1, //(optional)
     'score_cards' => 1, //(optional)
 );
@@ -24,7 +24,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'cc' => 'onehels@mail.ru', //CC emails (optional)
+    'cc' => 'email@domain.com', //CC emails (optional)
 );
 $out = $inst->approveLeaderBoardReport($inner_data);
 echo '<pre>';
@@ -54,8 +54,8 @@ echo '</pre>';*/
 /* Get score of tile per viewer session */
 
 /* Uncomment, to use this method */
-/*$box_id = 283; //Tile ID (required)
-$token = '51b9eeaf127541371139759'; //Lead session token (required)
+/*$box_id = 290; //Tile ID (required)
+$token = '51c9af0c648e21372172044'; //Lead session token (required)
 $out = $inst->getScoreOfTilePerViewer($box_id, $token);
 echo '<pre>';
 print_r($out);
@@ -75,7 +75,7 @@ echo '</pre>';*/
 /* Get pack lead engagement */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1400180273521657'; //(required)
+/*$pack_key = '1369900160341905'; //(required)
 $range = 1; //Date periods (1-5) (optional) - Default: 1
 $only_unique = 0; //only unique leads (0|1) (optional) - Default: 0
 $show_anonymous = 0; //show anonymous views (0|1) (optional) - Default: 0
@@ -87,7 +87,7 @@ echo '</pre>';*/
 /* Get lead score card */
 
 /* Uncomment, to use this method */
-/*$lead_token = '53762660a0cb81400252000'; //(required)
+/*$lead_token = '51dc7a2888dbe1373403688'; //(required)
 $out = $inst->getLeadScoreCard($lead_token);
 echo '<pre>';
 print_r($out);
@@ -96,7 +96,7 @@ echo '</pre>';*/
 /* Get content board reports data */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1400180273521657';
+/*$pack_key = '1369900160341905'; //Pack Key (required)
 $out = $inst->getPackContentReport($pack_key);
 echo '<pre>';
 print_r($out);
@@ -106,7 +106,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$range = 1; //Date periods (1-5) (optional) - Default: 1
-$email = 'onehels@gmail.com'; // Lead email (required)
+$email = 'etay@brightact.com'; // Lead email (required)
 $out = $inst->getLeadOverallEngagement($email, $range);
 echo '<pre>';
 print_r($out);
@@ -115,8 +115,8 @@ echo '</pre>';*/
 /* Get lead Asset Engagement */
 
 /* Uncomment, to use this method */
-/*$content_id = 5306; //Content ID (required)
-$token = '53ceb2acc0e931406055084'; //Lead token (required)
+/*$content_id = 291; //Content ID (required)
+$token = '5245e3be4bc491380311998'; //Lead token (required)
 $out = $inst->getLeadAssetEngagement($content_id, $token);
 echo '<pre>';
 print_r($out);
@@ -125,7 +125,7 @@ echo '</pre>';*/
 /* Get asset info */
 
 /* Uncomment, to use this method */
-$content_id = 5306; //Content ID (required)
+$content_id = 291; //Content ID (required)
 $range = 1; //Date periods (1-5) (optional) - Default: 1
 $out = $inst->getAssetInfo($content_id, $range);
 echo '<pre>';

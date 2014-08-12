@@ -726,16 +726,16 @@ Get pack content report data
     "hotspots":
         [
             {
-                "id": "Readme.pdf",
-                "name": "309",
+                "id": "188",
+                "name": "02462-BC-Hydro-success-story-web.pdf",
                 "page": "1",
-                "views": "1",
-                "views_p": "0",
-                "max_time": "0",
-                "avg_time": "0",
-                "avg_time_score": "0",
-                "views_p_score": "0",
-                "h_score": "0",
+                "views": "35",
+                "views_p": "52",
+                "max_time": "426",
+                "avg_time": "16",
+                "avg_time_score": "96",
+                "views_p_score": "90",
+                "h_score": "94",
             },
             ...
         ],

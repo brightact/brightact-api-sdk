@@ -13,7 +13,7 @@ class BrightAct {
      * You need set your own API key, you can find it at your account
      */
 
-    public $API_KEY = '32053e9db9176aa726253e9db9176b54';
+    public $API_KEY = '46053ea3761943c841553ea37619446a';
 
     /* Analytics methods */
 
@@ -464,7 +464,7 @@ class BrightAct {
         $curl = curl_init();
         curl_setopt_array($curl, $params);
         $resp = curl_exec($curl);
-        //echo $resp;
+
         if(!$resp) {
             //curl_close($curl);
             throw new Exception(curl_error($curl));
