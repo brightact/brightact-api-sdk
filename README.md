@@ -4,6 +4,7 @@ Brightact API v1
 Overview
 =================
 
+Thank you for reviewing the BrightAct API.
 Brightact API allow you to get access to all information at your account at BrightAct service. At current version you can get only Analytics data, but soon will be more. To use this API you can use our PHP SDK library, which allow to use all methods. 
 
 API Versions
