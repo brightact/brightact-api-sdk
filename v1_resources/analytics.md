@@ -238,7 +238,7 @@ Get LeaderBoard data
 [
     {
         "token":"51e406ea62d0f1373898474",
-        "email":"onehels@gmail.com",
+        "email":"test@domain.com",
         "score":"100",
         "date":"2013-07-15 17:29:15",
         "overall_num":76,
@@ -535,7 +535,7 @@ Get Top internal leads
 ```json
 [
     {
-        "email":"onehels@gmail.com",
+        "email":"test@domain.com",
         "score":"100"
     },
     ...
@@ -592,7 +592,7 @@ Get pack lead engagement
 [
     {
         "name":"---",
-        "email":"onehels@gmail2.com",
+        "email":"test@domain.com",
         "shared":0,
         "score":"12",
         "message_id":0,
@@ -639,7 +639,7 @@ Get Lead score card
     "main_data":
         {
             "lead_name":"---",
-            "email":"onehels@gmail.com",
+            "email":"test@domain.com",
             "score":"0",
             "referral":"me",
             "pack_name":"Firts SalesPack Admin",
