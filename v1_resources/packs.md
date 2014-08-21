@@ -66,6 +66,19 @@ Pack types list
 | 4 | One tile |
 
 
+## Content types
+
+Content types list
+
+| ID | Description |
+| ---- | --------------- |
+| 1 | Doc (PDF, DOCX, XLS, PPTX) |
+| 8 | Image (png, jpeg, gif) |
+| 3 | Video |
+| 4 | Embed link |
+| 9 | Custom HTML |
+
+
 ## Methods details
 
 
