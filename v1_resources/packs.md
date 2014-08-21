@@ -53,6 +53,19 @@ Alert types list
 | 3 | By Email and SMS |
 
 
+## Pack types
+
+Pack types list
+
+| ID | Description |
+| ---- | --------------- |
+| 0 | Mini-site |
+| 1 | Tiles |
+| 2 | Thumbnails |
+| 3 | Mini-site tiles |
+| 4 | One tile |
+
+
 ## Methods details
 
 
