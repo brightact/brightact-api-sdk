@@ -41,6 +41,18 @@ Mini-Site templates list
 | 5 | 5 Tiles - portrait |
 
 
+## Alert types
+
+Alert types list
+
+| ID | Description |
+| ---- | --------------- |
+| 0 | No alerts |
+| 1 | By Email |
+| 2 | By SMS |
+| 3 | By Email and SMS |
+
+
 ## Methods details
 
 
