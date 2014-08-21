@@ -1,9 +1,11 @@
 <?php
-include_once('library/BrightAct.php');
+include_once('library/AnalyticsManagement.php');
 
 /* Analytics methods examples */
 
-$inst = new BrightAct();
+/* Analytics instance */
+
+$inst = new AnalyticsManagement();
 
 /* Approve dashboard report */
 

@@ -55,7 +55,49 @@ Example of request with API key:
 Methods
 ================
 
-### [Analytics](/v1_resources/analytics.md)
+### [Users Management](/v1_resources/users.md)
+
+| Endpoint | Description |
+| ---- | --------------- |
+| [POST /api/v1/user](/v1_resources/users.md) | Create user |
+| [PUT /api/v1/user/:user_id](/v1_resources/users.md) | Update user |
+| [DELETE /api/v1/user/:user_id](/v1_resources/users.md) | Delete user |
+| [GET /api/v1/resetUserPassword/:user_id](/v1_resources/users.md) | Reset user password |
+| [GET /api/v1/users](/v1_resources/users.md) | Get users list |
+| [GET /api/v1/user/:user_id](/v1_resources/users.md) | Get user info |
+| [POST /api/v1/org](/v1_resources/users.md) | Create organization |
+| [PUT /api/v1/org/:org_id](/v1_resources/users.md) | Update organization |
+| [DELETE /api/v1/org/:org_id](/v1_resources/users.md) | Delete organization |
+| [GET /api/v1/orgs](/v1_resources/users.md) | Get organizations list |
+| [GET /api/v1/org/:org_id](/v1_resources/users.md) | Get organization info |
+
+
+### [Packs Management](/v1_resources/packs.md)
+
+| Endpoint | Description |
+| ---- | --------------- |
+| [GET /api/v1/packs?user_id=:user_id](/v1_resources/packs.md) | Get packs list |
+| [GET /api/v1/pack/:pack_key](/v1_resources/packs.md) | Get pack info |
+| [POST /api/v1/pack](/v1_resources/packs.md) | Create pack |
+| [PUT /api/v1/pack/:pack_key](/v1_resources/packs.md) | Update pack |
+| [DELETE /api/v1/pack/:pack_key](/v1_resources/packs.md) | Delete pack |
+| [GET /api/v1/tiles?pack_key=:pack_key](/v1_resources/packs.md) | Get tiles list |
+| [POST /api/v1/tile](/v1_resources/packs.md) | Create tile |
+| [PUT /api/v1/tile/:tile_id](/v1_resources/packs.md) | Update tile |
+| [DELETE /api/v1/tile/:tile_id](/v1_resources/packs.md) | Delete tile |
+| [POST /api/v1/attachContentToTile](/v1_resources/packs.md) | Attach content to tile |
+| [POST /api/v1/duplicatePack](/v1_resources/packs.md) | Duplicate pack |
+| [GET /api/v1/contents?user_id=:user_id](/v1_resources/packs.md) | Get content list from library |
+| [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md) | Get covers list from library |
+| [GET /api/v1/content/:content_id](/v1_resources/packs.md) | Get content info |
+| [PUT /api/v1/assetWeight/:content_id](/v1_resources/packs.md) | Update asset weight |
+| [DELETE /api/v1/content/:content_id](/v1_resources/packs.md) | Delete content |
+| [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md) | Get pack thumbnail |
+| [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md) | Get pack share links |
+| [POST /api/v1/sharePackInEmail](/v1_resources/packs.md) | Share pack via email |
+
+
+### [Analytics Management](/v1_resources/analytics.md)
 
 | Endpoint | Description |
 | ---- | --------------- |
