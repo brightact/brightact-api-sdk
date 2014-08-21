@@ -221,7 +221,7 @@ Create pack
             <td>Pack name</td>
         </tr>
         <tr>
-            <td><code>type</code></td>
+            <td><code><a href="/v1_resources/packs.md#pack-types">type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Pack type. Default: 0</td>
@@ -401,7 +401,7 @@ Update pack
             <td>Pack name</td>
         </tr>
         <tr>
-            <td><code>type</code></td>
+            <td><code><a href="/v1_resources/packs.md#pack-types">type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Pack type. Default: 0</td>
