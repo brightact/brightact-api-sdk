@@ -77,25 +77,25 @@ Methods
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [GET /api/v1/packs?user_id=:user_id](/v1_resources/packs.md) | Get packs list |
-| [GET /api/v1/pack/:pack_key](/v1_resources/packs.md) | Get pack info |
-| [POST /api/v1/pack](/v1_resources/packs.md) | Create pack |
-| [PUT /api/v1/pack/:pack_key](/v1_resources/packs.md) | Update pack |
-| [DELETE /api/v1/pack/:pack_key](/v1_resources/packs.md) | Delete pack |
-| [GET /api/v1/tiles?pack_key=:pack_key](/v1_resources/packs.md) | Get tiles list |
-| [POST /api/v1/tile](/v1_resources/packs.md) | Create tile |
-| [PUT /api/v1/tile/:tile_id](/v1_resources/packs.md) | Update tile |
-| [DELETE /api/v1/tile/:tile_id](/v1_resources/packs.md) | Delete tile |
-| [POST /api/v1/attachContentToTile](/v1_resources/packs.md) | Attach content to tile |
-| [POST /api/v1/duplicatePack](/v1_resources/packs.md) | Duplicate pack |
-| [GET /api/v1/contents?user_id=:user_id](/v1_resources/packs.md) | Get content list from library |
-| [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md) | Get covers list from library |
-| [GET /api/v1/content/:content_id](/v1_resources/packs.md) | Get content info |
-| [PUT /api/v1/assetWeight/:content_id](/v1_resources/packs.md) | Update asset weight |
-| [DELETE /api/v1/content/:content_id](/v1_resources/packs.md) | Delete content |
-| [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md) | Get pack thumbnail |
-| [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md) | Get pack share links |
-| [POST /api/v1/sharePackInEmail](/v1_resources/packs.md) | Share pack via email |
+| [GET /api/v1/packs?user_id=:user_id](/v1_resources/packs.md#get-apiv1packsuser_iduser_id) | Get packs list |
+| [GET /api/v1/pack/:pack_key](/v1_resources/packs.md#get-apiv1packpack_key) | Get pack info |
+| [POST /api/v1/pack](/v1_resources/packs.md#post-apiv1pack) | Create pack |
+| [PUT /api/v1/pack/:pack_key](/v1_resources/packs.md#put-apiv1packpack_key) | Update pack |
+| [DELETE /api/v1/pack/:pack_key](/v1_resources/packs.md#delete-apiv1packpack_key) | Delete pack |
+| [GET /api/v1/tiles?pack_key=:pack_key](/v1_resources/packs.md#get-apiv1tilespack_keypack_key) | Get tiles list |
+| [POST /api/v1/tile](/v1_resources/packs.md#post-apiv1tile) | Create tile |
+| [PUT /api/v1/tile/:tile_id](/v1_resources/packs.md#put-apiv1tiletile_id) | Update tile |
+| [DELETE /api/v1/tile/:tile_id](/v1_resources/packs.md#delete-apiv1tiletile_id) | Delete tile |
+| [POST /api/v1/attachContentToTile](/v1_resources/packs.md#post-apiv1attachcontenttotile) | Attach content to tile |
+| [POST /api/v1/duplicatePack](/v1_resources/packs.md#post-apiv1duplicatepack) | Duplicate pack |
+| [GET /api/v1/contents?user_id=:user_id](/v1_resources/packs.md#get-apiv1contentsuser_iduser_id) | Get content list from library |
+| [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md#get-apiv1coversuser_iduser_id) | Get covers list from library |
+| [GET /api/v1/content/:content_id](/v1_resources/packs.md#get-apiv1contentcontent_id) | Get content info |
+| [PUT /api/v1/assetWeight/:content_id](/v1_resources/packs.md#put-apiv1assetweightcontent_id) | Update asset weight |
+| [DELETE /api/v1/content/:content_id](/v1_resources/packs.md#delete-apiv1contentcontent_id) | Delete content |
+| [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md#get-apiv1getpackthumbnailpack_key) | Get pack thumbnail |
+| [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md#get-apiv1getpacklinkspack_key) | Get pack share links |
+| [POST /api/v1/sharePackInEmail](/v1_resources/packs.md#post-apiv1sharepackinemail) | Share pack via email |
 
 
 ### [Analytics Management](/v1_resources/analytics.md)

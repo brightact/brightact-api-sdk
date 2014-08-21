@@ -6,16 +6,14 @@ class BrightAct {
      * Base API path
      */
 
-    //public $API_PATH = 'http://app.brightact.com/api/v1';
-    public $API_PATH = 'http://app.salespkg.local/api/v1';
+    public $API_PATH = 'http://app.brightact.com/api/v1';
 
     /**
      * API KEY
      * You need set your own API key, you can find it at your account
      */
 
-    //public $API_KEY = '46053ea3761943c841553ea37619446a';
-    public $API_KEY = '38153d92f4a81fe225053d92f4a81f99';
+    public $API_KEY = '46053ea3761943c841553ea37619446a';
 
     /* Private functions */
 

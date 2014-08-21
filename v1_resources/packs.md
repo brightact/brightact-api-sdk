@@ -21,9 +21,9 @@ Working with packs data
 | [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md#get-apiv1coversuser_iduser_id) | Get covers list from library |
 | [GET /api/v1/content/:content_id](/v1_resources/packs.md#get-apiv1contentcontent_id) | Get content info |
 | [PUT /api/v1/assetWeight/:content_id](/v1_resources/packs.md#put-apiv1assetweightcontent_id) | Update asset weight |
-| [DELETE /api/v1/content/:content_id](/v1_resources/packs.md) | Delete content |
+| [DELETE /api/v1/content/:content_id](/v1_resources/packs.md#delete-apiv1contentcontent_id) | Delete content |
 | [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md#get-apiv1getpackthumbnailpack_key) | Get pack thumbnail |
-| [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md) | Get pack share links |
+| [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md#get-apiv1getpacklinkspack_key) | Get pack share links |
 | [POST /api/v1/sharePackInEmail](/v1_resources/packs.md#post-apiv1sharepackinemail) | Share pack via email |
 
 
