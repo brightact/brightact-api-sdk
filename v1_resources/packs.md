@@ -716,7 +716,7 @@ Create tile
             <td>CoverID from library</td>
         </tr>
         <tr>
-            <td><code>content_type</code></td>
+            <td><code><a href="/v1_resources/packs.md#content-types">content_type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Content type</td>
@@ -834,7 +834,7 @@ Update tile
             <td>ContentID from library</td>
         </tr>
         <tr>
-            <td><code>content_type</code></td>
+            <td><code><a href="/v1_resources/packs.md#content-types">content_type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Content type</td>
@@ -977,7 +977,7 @@ Attach content to tile (only for Mini-Site)
             <td>ContentID from library</td>
         </tr>
         <tr>
-            <td><code>content_type</code></td>
+            <td><code><a href="/v1_resources/packs.md#content-types">content_type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Content type</td>
