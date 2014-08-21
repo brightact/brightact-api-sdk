@@ -202,7 +202,7 @@ Create pack
             <td>Pack type. Default: 0</td>
         </tr>
         <tr>
-            <td><code>template</code></td>
+            <td><code><a href="/v1_resources/packs.md#mini-site-templates">template</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Template ID for Mini-Site</td>
@@ -382,7 +382,7 @@ Update pack
             <td>Pack type. Default: 0</td>
         </tr>
         <tr>
-            <td><code>template</code></td>
+            <td><code><a href="/v1_resources/packs.md#mini-site-templates">template</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Template ID for Mini-Site</td>
