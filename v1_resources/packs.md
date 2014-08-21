@@ -286,7 +286,7 @@ Create pack
             <td>Welcome note description</td>
         </tr>
         <tr>
-            <td><code>alert_type</code></td>
+            <td><code><a href="/v1_resources/packs.md#alert-types">alert_type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Alert type. Default: 0</td>
@@ -466,7 +466,7 @@ Update pack
             <td>Welcome note description</td>
         </tr>
         <tr>
-            <td><code>alert_type</code></td>
+            <td><code><a href="/v1_resources/packs.md#alert-types">alert_type</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Alert type. Default: 0</td>
