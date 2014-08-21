@@ -27,6 +27,20 @@ Working with packs data
 | [POST /api/v1/sharePackInEmail](/v1_resources/packs.md#post-apiv1sharepackinemail) | Share pack via email |
 
 
+## Mini-Site templates
+
+Mini-Site templates list
+
+| ID | Description |
+| ---- | --------------- |
+| 0 | 7 Tiles |
+| 1 | 9 Tiles |
+| 2 | 5 Tiles |
+| 3 | 3 Tiles |
+| 4 | 3 Tiles - portrait |
+| 5 | 5 Tiles - portrait |
+
+
 ## Methods details
 
 
@@ -191,7 +205,7 @@ Create pack
             <td><code>template</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Template ID for Mini-Pack</td>
+            <td>Template ID for Mini-Site</td>
         </tr>
         <tr>
             <td><code>description</code></td>
@@ -371,7 +385,7 @@ Update pack
             <td><code>template</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Template ID for Mini-Pack</td>
+            <td>Template ID for Mini-Site</td>
         </tr>
         <tr>
             <td><code>description</code></td>
@@ -643,13 +657,13 @@ Create tile
             <td><code>color_id</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Color of tile (only for Mini-Pack)</td>
+            <td>Color of tile (only for Mini-Site)</td>
         </tr>
         <tr>
             <td><code>is_home</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Do this tile as default tile (only for Mini-Pack)</td>
+            <td>Do this tile as default tile (only for Mini-Site)</td>
         </tr>
         <tr>
             <td><code>content_id</code></td>
@@ -767,13 +781,13 @@ Update tile
             <td><code>color_id</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Color of tile (only for Mini-Pack)</td>
+            <td>Color of tile (only for Mini-Site)</td>
         </tr>
         <tr>
             <td><code>is_home</code></td>
             <td>optional</td>
             <td>integer</td>
-            <td>Do this tile as default tile (only for Mini-Pack)</td>
+            <td>Do this tile as default tile (only for Mini-Site)</td>
         </tr>
         <tr>
             <td><code>content_id</code></td>
@@ -898,7 +912,7 @@ Delete tile
 
 ## `POST /api/v1/attachContentToTile`
 
-Attach content to tile (only for Mini-Pack)
+Attach content to tile (only for Mini-Site)
 
 ### Parameters
 
