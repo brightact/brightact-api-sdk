@@ -99,7 +99,7 @@ Create user (allowed only for admin API key)
             <td>Mobile number</td>
         </tr>
         <tr>
-            <td><code><a href="/v1_resources/users.md#mobile-providersmobile_provider">mobile_provider</a></code></td>
+            <td><code><a href="/v1_resources/users.md#mobile-providers">mobile_provider</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Mobile provider ID</td>
@@ -193,7 +193,7 @@ Update user
             <td>Mobile number</td>
         </tr>
         <tr>
-            <td><code><a href="/v1_resources/users.md#mobile-providersmobile_provider">mobile_provider</a></code></td>
+            <td><code><a href="/v1_resources/users.md#mobile-providers">mobile_provider</a></code></td>
             <td>optional</td>
             <td>integer</td>
             <td>Mobile provider ID</td>
