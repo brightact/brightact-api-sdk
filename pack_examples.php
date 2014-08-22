@@ -10,8 +10,7 @@ $inst = new PackManagement();
 /* Get content lib list */
 
 /* Uncomment, to use this method */
-/*$user_id = 1; //User ID (required)
-$out = $inst->getContentLibList($user_id);
+/*$out = $inst->getContentLibList();
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
@@ -19,7 +18,7 @@ echo '</pre>';*/
 /* Get content info */
 
 /* Uncomment, to use this method */
-/*$content_id = 11; //Content ID (required)
+/*$content_id = 7287; //Content ID (required)
 $out = $inst->getContentInfo($content_id);
 echo '<pre>';
 print_r($out);
@@ -28,8 +27,8 @@ echo '</pre>';*/
 /* Set asset weight */
 
 /* Uncomment, to use this method */
-/*$content_id = 11; //Content ID (required)
-$weight = 70; //Weight value (required)
+/*$content_id = 7287; //Content ID (required)
+$weight = 90; //Weight value (required)
 $out = $inst->setAssetWeight($content_id, $weight);
 echo '<pre>';
 print_r($out);
@@ -38,7 +37,7 @@ echo '</pre>';*/
 /* Get tiles list for pack */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1397499861257993'; //Pack key
+/*$pack_key = '1369900160341905'; //Pack key
 $out = $inst->tilesList($pack_key);
 echo '<pre>';
 print_r($out);
@@ -47,7 +46,7 @@ echo '</pre>';*/
 /* Remove content */
 
 /* Uncomment, to use this method */
-/*$content_id = 12; //Content ID (required)
+/*$content_id = 7287; //Content ID (required)
 $out = $inst->removeContent($content_id);
 echo '<pre>';
 print_r($out);
@@ -56,8 +55,7 @@ echo '</pre>';*/
 /* Get covers images */
 
 /* Uncomment, to use this method */
-/*$user_id = 1; //User ID (required)
-$out = $inst->getCoverLibList($user_id);
+/*$out = $inst->getCoverLibList();
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
@@ -65,8 +63,7 @@ echo '</pre>';*/
 /* Get packs list */
 
 /* Uncomment, to use this method */
-/*$user_id = 1; //User ID (required)
-$out = $inst->getPacksList($user_id);
+/*$out = $inst->getPacksList();
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
@@ -74,7 +71,7 @@ echo '</pre>';*/
 /* Get pack info */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1397499861257993'; //Pack key
+/*$pack_key = '1369900160341905'; //Pack key
 $out = $inst->getPackInfo($pack_key);
 echo '<pre>';
 print_r($out);
@@ -84,8 +81,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'name' => 'Test pack 2', //Pack name (required)
-    'user_id' => 1, //UserID (required)
+    'name' => 'Test pack', //Pack name (required)
 );
 $out = $inst->createPack($inner_data);
 echo '<pre>';
@@ -95,9 +91,9 @@ echo '</pre>';*/
 /* Update pack */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1408625101932904'; //Pack key (required)
+/*$pack_key = '1408703836131771'; //Pack key (required)
 $inner_data = array(
-    'name' => 'Test pack 3', //Pack name (required)
+    'name' => 'Test pack 2', //Pack name
 );
 $out = $inst->updatePack($pack_key, $inner_data);
 echo '<pre>';
@@ -107,7 +103,7 @@ echo '</pre>';*/
 /* Delete Pack */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1408625101932904'; //Pack key (required)
+/*$pack_key = '1408703836131771'; //Pack key (required)
 $out = $inst->deletePack($pack_key);
 echo '<pre>';
 print_r($out);
@@ -117,7 +113,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'pack_key' => '1380028793497428', //Pack key (required)
+    'pack_key' => '1408703836131771', //Pack key (required)
     'name' => 'Tile name 1', //Tile name (required)
 );
 $out = $inst->createTile($inner_data);
@@ -161,7 +157,7 @@ echo '</pre>';*/
 /* Duplicate pack */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1408560911572534';
+/*$pack_key = '1408703836131771';
 $out = $inst->duplicatePack($pack_key);
 echo '<pre>';
 print_r($out);
@@ -170,7 +166,7 @@ echo '</pre>';*/
 /* Get pack thumbnail */
 
 /* Uncomment, to use this method */
-/*$pack_key = '1408560911572534';
+/*$pack_key = '1369900160341905';
 $out = $inst->getPackThumbnail($pack_key);
 echo '<pre>';
 print_r($out);
@@ -180,7 +176,7 @@ echo '</pre>';*/
 /* Get pack links */
 
 /* Uncomment, to use this method */
-$pack_key = '1408560911572534';
+$pack_key = '1369900160341905';
 $out = $inst->getPackLinks($pack_key);
 echo '<pre>';
 print_r($out);
@@ -190,8 +186,9 @@ echo '</pre>';
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'pack_key' => 1408560911572534, //Pack key (required)
+    'pack_key' => 1369900160341905, //Pack key (required)
     'to' => 'onehels@gmail.com', //Send to (required)
+    'from' => 'onehels@yahoo.com', //From (optional)
 );
 $out = $inst->sharePackInEmail($inner_data);
 echo '<pre>';

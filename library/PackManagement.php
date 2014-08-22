@@ -15,7 +15,7 @@ class PackManagement extends BrightAct {
      * user_id - only for admin type of account
      */
 
-    public function getContentLibList($user_id)
+    public function getContentLibList($user_id = 'my')
     {
         $data = array(
             'user_id' => $user_id
@@ -96,7 +96,7 @@ class PackManagement extends BrightAct {
      * user_id - UserID (for current account can be used "my" instead UserID)
      */
 
-    public function getCoverLibList($user_id)
+    public function getCoverLibList($user_id = 'my')
     {
         $data = array(
             'user_id' => $user_id,
@@ -113,7 +113,7 @@ class PackManagement extends BrightAct {
      * user_id - UserID (for current account can be used "my" instead UserID)
      */
 
-    public function getPacksList($user_id)
+    public function getPacksList($user_id = 'my')
     {
         $data = array(
             'user_id' => $user_id,

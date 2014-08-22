@@ -58,7 +58,7 @@ class UserManagement extends BrightAct {
      * suppress_emails - Set suppress emails
      */
 
-    public function updateUser($id, $data)
+    public function updateUser($data, $id = 'my')
     {
         return $this->_proceed_put_method('user', $id, $data);
     }
@@ -86,7 +86,7 @@ class UserManagement extends BrightAct {
      * $id - UserID (for current user use "my" instead UserID)
      */
 
-    public function resetUserPassword($id)
+    public function resetUserPassword($id = 'my')
     {
         return $this->_proceed_method('resetUserPassword', $id);
     }
@@ -164,7 +164,7 @@ class UserManagement extends BrightAct {
      * id - UserID (for current user can be used "my" instead ID)
      */
 
-    public function getUserInfo($id)
+    public function getUserInfo($id = 'my')
     {
         return $this->_proceed_method('user', $id);
     }

@@ -26,21 +26,18 @@ echo '</pre>';*/
 /* Update user */
 
 /* Uncomment, to use this method */
-/*$user_id = 13; //UserID (required)
-$inner_data = array(
-    'last_name' => 'Test35355', //Last name (required)
-    'company' => 'Company3333555', //Company name (required)
-    'sp_num' => 15, //Allowed packs number (optional, default: 0)
+/*$inner_data = array(
+    'last_name' => 'Test', //Last name
 );
-$out = $inst->updateUser($user_id, $inner_data);
+$out = $inst->updateUser($inner_data);
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
 
-/* Delete user */
+/* Delete user (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-/*$user_id = 13; //UserID (required)
+/*$user_id = 189; //UserID (required)
 $out = $inst->deleteUser($user_id);
 echo '<pre>';
 print_r($out);
@@ -49,8 +46,7 @@ echo '</pre>';*/
 /* Reset user password */
 
 /* Uncomment, to use this method */
-/*$user_id = 13; //UserID (required)
-$out = $inst->resetUserPassword($user_id);
+/*$out = $inst->resetUserPassword();
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
@@ -58,16 +54,15 @@ echo '</pre>';*/
 /* Get user info */
 
 /* Uncomment, to use this method */
-/*$user_id = 13; //User ID (required)
-$out = $inst->getUserInfo($user_id);
+$out = $inst->getUserInfo();
 echo '<pre>';
 print_r($out);
-echo '</pre>';*/
+echo '</pre>';
 
 /* Get users list (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-/*$org_id = 3; //OrganizationID (required)
+/*$org_id = 1; //OrganizationID (required)
 $out = $inst->getUsersList($org_id);
 echo '<pre>';
 print_r($out);
@@ -77,7 +72,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'name' => 'TestOrg2' //Organization name (required)
+    'name' => 'TestOrg1' //Organization name (required)
 );
 $out = $inst->createOrg($inner_data);
 echo '<pre>';
@@ -87,9 +82,9 @@ echo '</pre>';*/
 /* Update organization (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-/*$org_id = 5; //Organization ID (required)
+/*$org_id = 59; //Organization ID (required)
 $inner_data = array(
-    'name' => 'TestOrg3', //Organization Name (optional)
+    'name' => 'TestOrg2', //Organization Name (optional)
 );
 $out = $inst->updateOrg($org_id, $inner_data);
 echo '<pre>';
@@ -99,7 +94,7 @@ echo '</pre>';*/
 /* Delete Organization (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-/*$org_id = 5; //Organization ID (required)
+/*$org_id = 59; //Organization ID (required)
 $out = $inst->deleteOrg($org_id);
 echo '<pre>';
 print_r($out);
@@ -108,7 +103,7 @@ echo '</pre>';*/
 /* Get organization info (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-/*$org_id = 3; //Organization ID (required)
+/*$org_id = 1; //Organization ID (required)
 $out = $inst->getOrgInfo($org_id);
 echo '<pre>';
 print_r($out);
@@ -117,8 +112,8 @@ echo '</pre>';*/
 /* Get organizations list (working only with Admin rights) */
 
 /* Uncomment, to use this method */
-$out = $inst->getOrgList();
+/*$out = $inst->getOrgList();
 echo '<pre>';
 print_r($out);
-echo '</pre>';
+echo '</pre>';*/
 
