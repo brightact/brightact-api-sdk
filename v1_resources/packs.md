@@ -25,11 +25,11 @@ Working with packs data
 | [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md#get-apiv1getpackthumbnailpack_key) | Get pack thumbnail |
 | [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md#get-apiv1getpacklinkspack_key) | Get pack share links |
 | [POST /api/v1/sharePackInEmail](/v1_resources/packs.md#post-apiv1sharepackinemail) | Share pack via email |
-| [POST /api/v1/survey](/v1_resources/packs.md#post-apiv1sharepackinemail) | Create/Update survey |
-| [DELETE /api/v1/tileSurvey/:tile_id](/v1_resources/packs.md#post-apiv1sharepackinemail) | Delete tile survey |
-| [DELETE /api/v1/packSurvey/:pack_key](/v1_resources/packs.md#post-apiv1sharepackinemail) | Delete pack survey |
-| [GET /api/v1/sendAlertEmail/:token](/v1_resources/packs.md#post-apiv1sharepackinemail) | Send Alert email |
-| [GET /api/v1/sendAlertSMS/:token](/v1_resources/packs.md#post-apiv1sharepackinemail) | Send Alert SMS |
+| [POST /api/v1/survey](/v1_resources/packs.md#post-apiv1survey) | Create/Update survey |
+| [DELETE /api/v1/tileSurvey/:tile_id](/v1_resources/packs.md#delete-apiv1tilesurveytile_id) | Delete tile survey |
+| [DELETE /api/v1/packSurvey/:pack_key](/v1_resources/packs.md#delete-apiv1packsurveytile_id) | Delete pack survey |
+| [GET /api/v1/sendAlertEmail/:token](/v1_resources/packs.md#get-apiv1sendalertemailtoken) | Send Alert email |
+| [GET /api/v1/sendAlertSMS/:token](/v1_resources/packs.md#get-apiv1sendalertsmstoken) | Send Alert SMS |
 
 
 ## Mini-Site templates
