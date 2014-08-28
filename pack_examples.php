@@ -222,8 +222,8 @@ echo '</pre>';*/
 /* Send Alert email */
 
 /* Uncomment, to use this method */
-$token = '53065172346611392922994';
-$to = 'onehels@gmail.com';
+$token = '5245e3be4bc491380311998';
+$to = 'test@mail.com';
 $out = $inst->sendAlertEmail($token, $to);
 echo '<pre>';
 print_r($out);

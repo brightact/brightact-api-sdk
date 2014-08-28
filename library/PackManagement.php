@@ -343,12 +343,14 @@ class PackManagement extends BrightAct {
     }
 
     /**
-     * Send alert email
+     * Send Alert email
      * @param $id
+     * @param null $to
      * @return mixed
      *
-     * Param:
-     * id - User session token
+     * Params:
+     * id - Session token
+     * to - send to (email)
      */
 
     public function sendAlertEmail($id, $to = null)
