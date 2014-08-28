@@ -223,7 +223,8 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 $token = '53065172346611392922994';
-$out = $inst->sendAlertEmail($token);
+$to = 'onehels@gmail.com';
+$out = $inst->sendAlertEmail($token, $to);
 echo '<pre>';
 print_r($out);
 echo '</pre>';

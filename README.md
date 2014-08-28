@@ -99,7 +99,7 @@ Methods
 | [POST /api/v1/survey](/v1_resources/packs.md#post-apiv1survey) | Create/Update survey |
 | [DELETE /api/v1/tileSurvey/:tile_id](/v1_resources/packs.md#delete-apiv1tilesurveytile_id) | Delete tile survey |
 | [DELETE /api/v1/packSurvey/:pack_key](/v1_resources/packs.md#delete-apiv1packsurveytile_id) | Delete pack survey |
-| [GET /api/v1/sendAlertEmail/:token](/v1_resources/packs.md#get-apiv1sendalertemailtoken) | Send Alert email |
+| [GET /api/v1/sendAlertEmail/:token?to=:to](/v1_resources/packs.md#get-apiv1sendalertemailtokentoto) | Send Alert email |
 | [GET /api/v1/sendAlertSMS/:token](/v1_resources/packs.md#get-apiv1sendalertsmstoken) | Send Alert SMS |
 
 

@@ -351,9 +351,12 @@ class PackManagement extends BrightAct {
      * id - User session token
      */
 
-    public function sendAlertEmail($id)
+    public function sendAlertEmail($id, $to = null)
     {
-        return $this->_proceed_method('sendAlertEmail', $id);
+        $data = array(
+            'to' => $to
+        );
+        return $this->_proceed_method('sendAlertEmail', $id, $data);
     }
 
     /**
