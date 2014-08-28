@@ -199,7 +199,7 @@ echo '</pre>';*/
 
 /* Uncomment, to use this method */
 /*$inner_data = array(
-    'tile_id' => 21332,
+    'tile_id' => 21332, //TileID
     'question' => 'Test question 1?',
     'answers' => 'Yes|No|Maybe',
     'show' => 1,
@@ -213,7 +213,7 @@ echo '</pre>';*/
 /* Delete Tile survey */
 
 /* Uncomment, to use this method */
-/*$tileID = 21332;
+/*$tileID = 21332; //TileID
 $out = $inst->deleteTileSurvey($tileID);
 echo '<pre>';
 print_r($out);
@@ -222,8 +222,8 @@ echo '</pre>';*/
 /* Send Alert email */
 
 /* Uncomment, to use this method */
-$token = '5245e3be4bc491380311998';
-$to = 'test@mail.com';
+$token = '5245e3be4bc491380311998'; //User session token
+$to = 'test@mail.com'; //Send to
 $out = $inst->sendAlertEmail($token, $to);
 echo '<pre>';
 print_r($out);
@@ -232,7 +232,7 @@ echo '</pre>';
 /* Send Alert email */
 
 /* Uncomment, to use this method */
-/*$token = '53065172346611392922994';
+/*$token = '53065172346611392922994'; // User session token
 $out = $inst->sendAlertSMS($token);
 echo '<pre>';
 print_r($out);
