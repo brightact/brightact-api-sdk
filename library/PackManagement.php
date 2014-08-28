@@ -295,4 +295,79 @@ class PackManagement extends BrightAct {
         return $this->_proceed_post_method('sharePackInEmail', $data);
     }
 
+    /**
+     * Create/update survey per tile or per pack
+     * @param $data
+     * @return mixed
+     *
+     * Params:
+     * tile_id - TileID (required only if you want specify survey per tile)
+     * pack_key - Pack Key (required only if tile_id is empty)
+     * question - Question (required)
+     * answers - Answers (required, separated by "|" symbol)
+     * pos - position of question (range: 1-3, default: 1)
+     * show - Show/hide survey (default: 1)
+     */
+
+    public function updateSurvey($data)
+    {
+        return $this->_proceed_post_method('survey', $data);
+    }
+
+    /**
+     * Delete tile survey
+     * @param $id
+     * @return mixed
+     *
+     * Param:
+     * id - TileID (required)
+     */
+
+    public function deleteTileSurvey($id)
+    {
+        return $this->_proceed_delete_method('tileSurvey', $id);
+    }
+
+    /**
+     * Delete pack survey
+     * @param $id
+     * @return mixed
+     *
+     * Param:
+     * id - PackKey (required)
+     */
+
+    public function deletePackSurvey($id)
+    {
+        return $this->_proceed_delete_method('packSurvey', $id);
+    }
+
+    /**
+     * Send alert email
+     * @param $id
+     * @return mixed
+     *
+     * Param:
+     * id - User session token
+     */
+
+    public function sendAlertEmail($id)
+    {
+        return $this->_proceed_method('sendAlertEmail', $id);
+    }
+
+    /**
+     * Send alert SMS
+     * @param $id
+     * @return mixed
+     *
+     * Param:
+     * id - User session token
+     */
+
+    public function sendAlertSMS($id)
+    {
+        return $this->_proceed_method('sendAlertSMS', $id);
+    }
+
 }

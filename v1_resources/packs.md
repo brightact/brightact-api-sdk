@@ -25,6 +25,11 @@ Working with packs data
 | [GET /api/v1/getPackThumbnail/:pack_key](/v1_resources/packs.md#get-apiv1getpackthumbnailpack_key) | Get pack thumbnail |
 | [GET /api/v1/getPackLinks/:pack_key](/v1_resources/packs.md#get-apiv1getpacklinkspack_key) | Get pack share links |
 | [POST /api/v1/sharePackInEmail](/v1_resources/packs.md#post-apiv1sharepackinemail) | Share pack via email |
+| [POST /api/v1/survey](/v1_resources/packs.md#post-apiv1sharepackinemail) | Create/Update survey |
+| [DELETE /api/v1/tileSurvey/:tile_id](/v1_resources/packs.md#post-apiv1sharepackinemail) | Delete tile survey |
+| [DELETE /api/v1/packSurvey/:pack_key](/v1_resources/packs.md#post-apiv1sharepackinemail) | Delete pack survey |
+| [GET /api/v1/sendAlertEmail/:token](/v1_resources/packs.md#post-apiv1sharepackinemail) | Send Alert email |
+| [GET /api/v1/sendAlertSMS/:token](/v1_resources/packs.md#post-apiv1sharepackinemail) | Send Alert SMS |
 
 
 ## Mini-Site templates
@@ -1400,6 +1405,210 @@ Share pack in email
             <td>optional</td>
             <td>string</td>
             <td>Message body</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "id":1
+}
+```
+
+
+
+## `POST /api/v1/survey`
+
+Share pack in email
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>tile_id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>TileID (required for all tile surveys)</td>
+        </tr>
+        <tr>
+            <td><code>pack_key</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>PackKey (required only for pack survey - show after registration) (Only at Mini-site pack)</td>
+        </tr>
+        <tr>
+            <td><code>question</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Question</td>
+        </tr>
+        <tr>
+            <td><code>answers</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Answers (required, separated by "|" symbol)</td>
+        </tr>
+        <tr>
+            <td><code>pos</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Position of question (range: 1-3, default: 1)</td>
+        </tr>
+        <tr>
+            <td><code>show</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Show/hide survey (default: 1)</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "id":1
+}
+```
+
+
+## `DELETE /api/v1/tileSurvey/:tile_id`
+
+Delete tile survey
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>tile_id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>TileID</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "message":"Success"
+}
+```
+
+
+
+## `DELETE /api/v1/packSurvey/:tile_id`
+
+Delete pack survey
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>pack_key</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>PackKey</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "message":"Success"
+}
+```
+
+
+
+## `GET /api/v1/sendAlertEmail/:token`
+
+Send Alert Email
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>token</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>User session token</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "id":1
+}
+```
+
+
+
+## `GET /api/v1/sendAlertSMS/:token`
+
+Send Alert SMS
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>token</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>User session token</td>
         </tr>
     </tbody>
 </table>

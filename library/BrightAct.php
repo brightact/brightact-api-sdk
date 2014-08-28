@@ -118,7 +118,7 @@ class BrightAct {
         $curl = curl_init();
         curl_setopt_array($curl, $params);
         $resp = curl_exec($curl);
-        echo $resp;
+
         if(!$resp) {
             //curl_close($curl);
             throw new Exception(curl_error($curl));

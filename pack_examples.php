@@ -176,11 +176,11 @@ echo '</pre>';*/
 /* Get pack links */
 
 /* Uncomment, to use this method */
-$pack_key = '1369900160341905';
+/*$pack_key = '1369900160341905';
 $out = $inst->getPackLinks($pack_key);
 echo '<pre>';
 print_r($out);
-echo '</pre>';
+echo '</pre>';*/
 
 /* Share pack via email */
 
@@ -191,6 +191,48 @@ echo '</pre>';
     'from' => 'onehels@yahoo.com', //From (optional)
 );
 $out = $inst->sharePackInEmail($inner_data);
+echo '<pre>';
+print_r($out);
+echo '</pre>';*/
+
+/* Create/Update survey */
+
+/* Uncomment, to use this method */
+/*$inner_data = array(
+    'tile_id' => 21332,
+    'question' => 'Test question 1?',
+    'answers' => 'Yes|No|Maybe',
+    'show' => 1,
+    'pos' => 1,
+);
+$out = $inst->updateSurvey($inner_data);
+echo '<pre>';
+print_r($out);
+echo '</pre>';*/
+
+/* Delete Tile survey */
+
+/* Uncomment, to use this method */
+/*$tileID = 21332;
+$out = $inst->deleteTileSurvey($tileID);
+echo '<pre>';
+print_r($out);
+echo '</pre>';*/
+
+/* Send Alert email */
+
+/* Uncomment, to use this method */
+$token = '53065172346611392922994';
+$out = $inst->sendAlertEmail($token);
+echo '<pre>';
+print_r($out);
+echo '</pre>';
+
+/* Send Alert email */
+
+/* Uncomment, to use this method */
+/*$token = '53065172346611392922994';
+$out = $inst->sendAlertSMS($token);
 echo '<pre>';
 print_r($out);
 echo '</pre>';*/
