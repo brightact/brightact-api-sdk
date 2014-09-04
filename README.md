@@ -87,7 +87,7 @@ Methods
 | [PUT /api/v1/tile/:tile_id](/v1_resources/packs.md#put-apiv1tiletile_id) | Update tile |
 | [DELETE /api/v1/tile/:tile_id](/v1_resources/packs.md#delete-apiv1tiletile_id) | Delete tile |
 | [POST /api/v1/attachContentToTile](/v1_resources/packs.md#post-apiv1attachcontenttotile) | Attach content to tile |
-| [PUT /api/v1/content](/v1_resources/packs.md#post-apiv1content) | Update content |
+| [PUT /api/v1/content](/v1_resources/packs.md#put-apiv1content) | Update content |
 | [POST /api/v1/duplicatePack](/v1_resources/packs.md#post-apiv1duplicatepack) | Duplicate pack |
 | [GET /api/v1/contents?user_id=:user_id](/v1_resources/packs.md#get-apiv1contentsuser_iduser_id) | Get content list from library |
 | [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md#get-apiv1coversuser_iduser_id) | Get covers list from library |
