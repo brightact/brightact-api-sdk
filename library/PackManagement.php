@@ -375,4 +375,19 @@ class PackManagement extends BrightAct {
         return $this->_proceed_method('sendAlertSMS', $id);
     }
 
+    /**
+     * Update content
+     * @param $id
+     * @param $data
+     * @return mixed
+     *
+     * Params:
+     * id - ContentID
+     */
+
+    public function updateContent($id, $data)
+    {
+        return $this->_proceed_put_method('content', $id, $data);
+    }
+
 }

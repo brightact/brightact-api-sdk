@@ -37,11 +37,11 @@ echo '</pre>';*/
 /* Get content board report data */
 
 /* Uncomment, to use this method */
-/*$range = 1; //Date periods (1-5) (optional) - Default: 1
+$range = 1; //Date periods (1-5) (optional) - Default: 1
 $out = $inst->getContentBoardData($range);
 echo '<pre>';
 print_r($out);
-echo '</pre>';*/
+echo '</pre>';
 
 /* Get leader board report data */
 
@@ -127,9 +127,9 @@ echo '</pre>';*/
 /* Get asset info */
 
 /* Uncomment, to use this method */
-$content_id = 291; //Content ID (required)
+/*$content_id = 291; //Content ID (required)
 $range = 1; //Date periods (1-5) (optional) - Default: 1
 $out = $inst->getAssetInfo($content_id, $range);
 echo '<pre>';
 print_r($out);
-echo '</pre>';
+echo '</pre>';*/

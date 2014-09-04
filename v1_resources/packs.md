@@ -16,6 +16,7 @@ Working with packs data
 | [PUT /api/v1/tile/:tile_id](/v1_resources/packs.md#put-apiv1tiletile_id) | Update tile |
 | [DELETE /api/v1/tile/:tile_id](/v1_resources/packs.md#delete-apiv1tiletile_id) | Delete tile |
 | [POST /api/v1/attachContentToTile](/v1_resources/packs.md#post-apiv1attachcontenttotile) | Attach content to tile |
+| [PUT /api/v1/content](/v1_resources/packs.md#post-apiv1content) | Update content |
 | [POST /api/v1/duplicatePack](/v1_resources/packs.md#post-apiv1duplicatepack) | Duplicate pack |
 | [GET /api/v1/contents?user_id=:user_id](/v1_resources/packs.md#get-apiv1contentsuser_iduser_id) | Get content list from library |
 | [GET /api/v1/covers?user_id=:user_id](/v1_resources/packs.md#get-apiv1coversuser_iduser_id) | Get covers list from library |
@@ -82,6 +83,17 @@ Content types list
 | 3 | Video |
 | 4 | Embed link |
 | 9 | Custom HTML |
+
+
+## Content update types
+
+Content update types list
+
+| ID | Description |
+| ---- | --------------- |
+| 0 |  Just for this pack |
+| 1 | Across all packs |
+
 
 
 ## Methods details
@@ -1004,6 +1016,83 @@ Attach content to tile (only for Mini-Site)
             <td>optional</td>
             <td>string</td>
             <td>Content HTML for Custom HTML type</td>
+        </tr>
+        <tr>
+            <td><code>auto_play</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Auto play status. Default: 0. Only for videos</td>
+        </tr>
+        <tr>
+            <td><code>offset_time</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Offset time for video. Default: 0. Value in seconds</td>
+        </tr>
+        <tr>
+            <td><code>open_in_new_window</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Open in new window status. Default: 0. Only for embed links</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "id":"1"
+}
+```
+
+
+
+## `PUT /api/v1/content`
+
+Update content
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>id</code></td>
+            <td>required</td>
+            <td>integer</td>
+            <td>ContentID</td>
+        </tr>
+        <tr>
+            <td><code><a href="/v1_resources/packs.md#content-update-types">upd_type</a></code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Update type. Default: 0</td>
+        </tr>
+        <tr>
+            <td><code><a href="/v1_resources/packs.md#content-types">content_type</a></code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Content type</td>
+        </tr>
+        <tr>
+            <td><code>content_url</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>Content url</td>
+        </tr>
+        <tr>
+            <td><code>content_name</code></td>
+            <td>optional</td>
+            <td>string</td>
+            <td>Content name. Only for images</td>
         </tr>
         <tr>
             <td><code>auto_play</code></td>

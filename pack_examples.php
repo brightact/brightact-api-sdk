@@ -154,6 +154,20 @@ echo '<pre>';
 print_r($out);
 echo '</pre>';*/
 
+/* Update content */
+
+/* Uncomment, to use this method */
+/*$id = '3933'; //ContentID
+$inner_data = array(
+    'upd_type' => 1,
+    'content_type' => 3,
+    'content_url' => 'https://www.youtube.com/watch?v=EsQueG5VjSg'
+);
+$out = $inst->updateContent($id, $inner_data);
+echo '<pre>';
+print_r($out);
+echo '</pre>';*/
+
 /* Duplicate pack */
 
 /* Uncomment, to use this method */
