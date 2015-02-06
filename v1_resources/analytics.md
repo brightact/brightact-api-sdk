@@ -22,7 +22,7 @@ Get analytics data.
 | [GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range](/v1_resources/analytics.md#get-apiv1getleadoverallengagementuser_idemailemailrangerange) | Get lead overall engagement |
 | [GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token](/v1_resources/analytics.md#get-apiv1getleadassetengagementcontent_idlead_tokenlead_token) | Get lead asset engagement |
 | [GET /api/v1/getAssetInfo/:content_id?range=:range](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get asset info |
-
+| [GET /api/v1/getSurvey/:pack_key?range=:range&only_unique=:only_unique](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get survey data |
 
 ## Date ranges
 
@@ -895,5 +895,57 @@ Get asset info
     "views":51,
     "printed":0,
     "downloaded":0,
+}
+```
+
+## `GET /api/v1/getSurvey/:pack_key?range=:range&only_unique=:only_unique`
+
+Get survey data
+
+### Parameters
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Required?</th>
+            <th width="50">Type</th>
+            <th width=100%>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr>
+            <td><code>pack_key</code></td>
+            <td>required</td>
+            <td>string</td>
+            <td>Pack key</td>
+        </tr>
+        <tr>
+            <td><a href="/v1_resources/analytics.md#date-ranges"><code>range</code></a></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Date period. Default: 1</td>
+        </tr>
+        <tr>
+            <td><code>only_unique</code></td>
+            <td>optional</td>
+            <td>integer</td>
+            <td>Show only unique leads. Default: 0</td>
+        </tr>
+    </tbody>
+</table>
+
+### Example Response
+
+```json
+{
+    "pack_name":"Test pack",
+    "lead_answers": [
+        {
+            "question": "Test question?",
+            "answer": "Yes"
+        },
+        ...
+    ]
 }
 ```
