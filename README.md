@@ -124,5 +124,5 @@ Methods
 | [GET /api/v1/getLeadOverallEngagement/:user_id?email=:email&range=:range](/v1_resources/analytics.md#get-apiv1getleadoverallengagementuser_idemailemailrangerange) | Get lead overall engagement |
 | [GET /api/v1/getLeadAssetEngagement/:content_id?lead_token=:lead_token](/v1_resources/analytics.md#get-apiv1getleadassetengagementcontent_idlead_tokenlead_token) | Get lead asset engagement |
 | [GET /api/v1/getAssetInfo/:content_id?range=:range](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get asset info |
-| [GET /api/v1/getSurvey/:pack_key?range=:range&only_unique=:only_unique](/v1_resources/analytics.md#get-apiv1getassetinfocontent_idrangerange) | Get survey data |
+| [GET /api/v1/getSurvey/:pack_key?range=:range&only_unique=:only_unique](/v1_resources/analytics.md#get-apiv1getsurveypack_keyrangerangeonly_uniqueonly_unique) | Get survey data |
 
