@@ -60,17 +60,17 @@ Methods
 
 | Endpoint | Description |
 | ---- | --------------- |
-| [POST /api/v1/user](/v1_resources/users.md#post-apiv1user) | Create user |
+| [POST /api/v1/user](/v1_resources/users.md#post-apiv1user) | Create user [admin] |
 | [PUT /api/v1/user/:user_id](/v1_resources/users.md#put-apiv1useruser_id) | Update user |
-| [DELETE /api/v1/user/:user_id](/v1_resources/users.md#delete-apiv1useruser_id) | Delete user |
+| [DELETE /api/v1/user/:user_id](/v1_resources/users.md#delete-apiv1useruser_id) | Delete user [admin] |
 | [GET /api/v1/resetUserPassword/:user_id](/v1_resources/users.md#get-apiv1resetuserpassworduser_id) | Reset user password |
-| [GET /api/v1/users?org_id=:org_id](/v1_resources/users.md#get-apiv1usersorg_idorg_id) | Get users list |
+| [GET /api/v1/users?org_id=:org_id](/v1_resources/users.md#get-apiv1usersorg_idorg_id) | Get users list [admin] |
 | [GET /api/v1/user/:user_id](/v1_resources/users.md#get-apiv1useruser_id) | Get user info |
-| [POST /api/v1/org](/v1_resources/users.md#post-apiv1org) | Create organization |
-| [PUT /api/v1/org/:org_id](/v1_resources/users.md#put-apiv1orgorg_id) | Update organization |
-| [DELETE /api/v1/org/:org_id](/v1_resources/users.md#delete-apiv1orgorg_id) | Delete organization |
-| [GET /api/v1/orgs](/v1_resources/users.md#get-apiv1orgs) | Get organizations list |
-| [GET /api/v1/org/:org_id](/v1_resources/users.md#get-apiv1orgorg_id) | Get organization info |
+| [POST /api/v1/org](/v1_resources/users.md#post-apiv1org) | Create organization [admin] |
+| [PUT /api/v1/org/:org_id](/v1_resources/users.md#put-apiv1orgorg_id) | Update organization [admin] |
+| [DELETE /api/v1/org/:org_id](/v1_resources/users.md#delete-apiv1orgorg_id) | Delete organization [admin] |
+| [GET /api/v1/orgs](/v1_resources/users.md#get-apiv1orgs) | Get organizations list [admin] |
+| [GET /api/v1/org/:org_id](/v1_resources/users.md#get-apiv1orgorg_id) | Get organization info [admin] |
 
 
 ### [Packs Management](/v1_resources/packs.md)
